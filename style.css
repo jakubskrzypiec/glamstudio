@@ -240,3 +240,10 @@ footer{
   position: relative;
   z-index: 3; /* żeby było NAD wszystkim */
 }
+.hero-logo {
+  width: 380px;
+  max-width: 80%;
+
+  filter: brightness(0) saturate(100%)
+          drop-shadow(0 10px 30px rgba(0,0,0,0.8));
+}
