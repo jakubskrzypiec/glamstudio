@@ -210,11 +210,14 @@ footer{
 
 /* LOGO */
 .hero-logo {
-  width: 260px; /* było 140-180 → teraz większe */
+  width: 380px; /* było 140/180 → teraz konkretnie większe */
+  max-width: 80%; /* żeby na telefonie się nie rozjechało */
+  
   transition: 0.4s;
   cursor: pointer;
 
-  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 15px 50px rgba(0,0,0,0.9));
+}
 }
 /* 🔥 GLOW EFFECT */
 .hero-logo:hover {
@@ -223,10 +226,6 @@ footer{
           drop-shadow(0 10px 40px rgba(0,0,0,0.9));
 }
 
-/* delikatny cień cały czas */
-.hero-logo {
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
-}
 /* VIDEO */
 .bg-video {
   position: absolute;
@@ -236,4 +235,8 @@ footer{
 
   filter: blur(4px) brightness(0.5);
   transform: scale(1.05);
+}
+.hero-content {
+  position: relative;
+  z-index: 3; /* żeby było NAD wszystkim */
 }
