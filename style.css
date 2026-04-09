@@ -1,3 +1,8 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -8,180 +13,35 @@ body {
   min-height: 100vh;
 }
 
-* {
-  box-sizing: border-box;
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-
-
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
-}
-
-/* NAV */
-header{
+/* ===== NAV ===== */
+header {
   background: transparent;
   border-bottom: 1px solid #eee;
 }
 
-
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 0;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
-  height: 65vh;
+  position: relative;
+  height: 70vh;
   border-radius: 0 0 40px 40px;
   overflow: hidden;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.75)
-  );
-}
-
-.hero-content{
-  position:relative;
-  color:white;
-  text-align:center;
-}
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:15px;
-  background:linear-gradient(45deg,#d4af37,#f1d27a);
-  padding:12px 25px;
-  border-radius:30px;
-  color:white;
-  text-decoration:none;
-}
-
-/* SEKCJE */
-section{
-  padding:80px 0;
-}
-
-/* ABOUT */
-.about-grid{
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:40px;
-}
-
-.about-box{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-/* SERVICES */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-}
-
-.card{
-  background:white;
-  border-radius:15px;
-  overflow:hidden;
-  transition:.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-}
-
-.card img{
-  width:100%;
-}
-
-/* PRICING */
-.price{
-  display:flex;
-  justify-content:space-between;
-  padding:15px 0;
-  border-bottom:1px solid #eee;
-}
-
-/* CTA */
-.cta{
-  background:#111;
-  color:white;
-  text-align:center;
-}
-
-/* FOOTER */
-footer{
-  background:#000;
-  color:white;
-  padding:60px 0;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:30px;
-}
-/* PRICING */
-.pricing h2{
-  text-align:center;
-  margin-bottom:40px;
-}
-
-.pricing-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:30px;
-}
-
-.price-card{
-  background:white;
-  padding:30px;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  transition:.3s;
-}
-
-.price-card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 20px 50px rgba(0,0,0,0.15);
-}
-
-.price-card h3{
-  margin-bottom:20px;
-}
-
-.price-item{
-  display:flex;
-  justify-content:space-between;
-  padding:12px 0;
-  border-bottom:1px solid #eee;
-}
-
-.price-item:last-child{
-  border-bottom:none;
-}
-/* HERO CLEAN */
-.hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
+/* VIDEO */
 .bg-video {
   position: absolute;
   top: 50%;
@@ -189,53 +49,154 @@ footer{
   width: 120%;
   height: 120%;
   object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -2;
+  transform: translate(-50%, -50%) scale(1.1);
 
-  filter: blur(6px) brightness(0.4);
+  filter: blur(8px) brightness(0.35);
+  z-index: 1;
 }
 
-/* lekko przyciemnione video */
+/* OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: -1;
+  background: rgba(0,0,0,0.65);
+  z-index: 2;
 }
+
+/* HERO CONTENT */
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
-
-/* VIDEO */
-.bg-video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  filter: blur(4px) brightness(0.5);
-  transform: scale(1.05);
-}
-.hero-content {
-  position: relative;
-  z-index: 3; /* żeby było NAD wszystkim */
-}
+/* LOGO */
 .hero-logo {
-  width: 1500px;
-  max-width: 95%;
+  width: 1100px;
+  max-width: 90%;
 
   filter: brightness(0) invert(1)
-          drop-shadow(0 20px 60px rgba(0,0,0,0.9));
+          drop-shadow(0 25px 80px rgba(0,0,0,1));
 
   transition: 0.4s;
 }
 
 .hero-logo:hover {
   transform: scale(1.05);
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #d4af37, #f1d27a);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== SEKCJE ===== */
+section {
+  padding: 80px 0;
+}
+
+/* ===== ABOUT ===== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ===== SERVICES ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+}
+
+/* ===== PRICING ===== */
+.pricing h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 30px;
+}
+
+.price-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.price-card h3 {
+  margin-bottom: 20px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #000;
+  color: white;
+  padding: 60px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 30px;
 }
