@@ -134,5 +134,5 @@ footer{
   gap:30px;
 }
 body {
-  border: 5px solid red;
+  background: red !important;
 }
