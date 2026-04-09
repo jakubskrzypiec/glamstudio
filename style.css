@@ -241,7 +241,7 @@ footer{
   z-index: 3; /* żeby było NAD wszystkim */
 }
 .hero-logo {
-  width: 380px;
+  width: 1200px;
   max-width: 80%;
 
   filter: brightness(0) saturate(100%)
