@@ -5,9 +5,7 @@
   <title>Glam Studio Aleksandra Knas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FONTY -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,39 +27,40 @@
   </div>
 </section>
 
-<section class="about container">
+<section class="about container fade">
   <h2>O mnie</h2>
   <p>
-    Nazywam się Aleksandra Knas i specjalizuję się w makijażu permanentnym oraz stylizacji brwi i rzęs.
-    Każdy zabieg dopasowuję indywidualnie, aby podkreślić naturalne piękno i zapewnić najlepsze efekty.
+    Glam Studio to miejsce stworzone z pasji do piękna i estetyki. 
+    Specjalizuję się w makijażu permanentnym oraz stylizacji brwi i rzęs, 
+    dbając o każdy detal, aby podkreślić naturalne rysy twarzy.
   </p>
 </section>
 
-<section class="services container">
+<section class="services container fade">
   <h2>Usługi</h2>
   <div class="grid">
 
-    <div>
+    <div class="card">
       <img src="lamibrows.jpg">
       <h3>Laminacja brwi</h3>
     </div>
 
-    <div>
+    <div class="card">
       <img src="lamilashes.jpg">
       <h3>Laminacja rzęs</h3>
     </div>
 
-    <div>
+    <div class="card">
       <img src="pmubrows.jpg">
       <h3>Makijaż permanentny brwi</h3>
     </div>
 
-    <div>
+    <div class="card">
       <img src="usta.jpg">
       <h3>Makijaż permanentny ust</h3>
     </div>
 
-    <div>
+    <div class="card">
       <img src="oko.jpg">
       <h3>Stylizacja oka</h3>
     </div>
@@ -69,7 +68,7 @@
   </div>
 </section>
 
-<section class="pricing container">
+<section class="pricing container fade">
   <h2>Cennik</h2>
 
   <div class="price-block">
@@ -95,31 +94,63 @@
 
 </section>
 
-<section class="reviews container">
+<section class="reviews container fade">
   <h2>Opinie</h2>
-  <p>"Profesjonalizm i perfekcyjne podejście do klienta!"</p>
-  <p>"Najlepsza stylizacja brwi jaką miałam!"</p>
-  <p>"Polecam z całego serca ❤️"</p>
-</section>
-
-<section class="contact container">
-  <h2>Kontakt</h2>
-  <p>Glam Studio Aleksandra Knas</p>
-  <p>Bytom, ul. Wrocławska 13</p>
-  <p>Telefon: 733 840 635</p>
-  <p>Email: glamstudioak@gmail.com</p>
-
-  <div class="socials">
-    <a href="https://www.instagram.com/glamstudio__AK/">Instagram</a>
-    <a href="https://www.facebook.com/profile.php?id=100089813034389">Facebook</a>
+  <div class="review-box">
+    <p>"Profesjonalizm i perfekcyjne podejście do klienta!"</p>
   </div>
-
-  <a href="https://booksy.com/pl-pl/181571" class="btn">Umów wizytę</a>
+  <div class="review-box">
+    <p>"Najlepsza stylizacja brwi jaką miałam!"</p>
+  </div>
+  <div class="review-box">
+    <p>"Polecam z całego serca ❤️"</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Glam Studio</p>
+  <div class="container footer-grid">
+    <div>
+      <h3>Glam Studio</h3>
+      <p>Bytom, ul. Wrocławska 13</p>
+    </div>
+
+    <div>
+      <h3>Kontakt</h3>
+      <p>733 840 635</p>
+      <p>glamstudioak@gmail.com</p>
+    </div>
+
+    <div>
+      <h3>Social</h3>
+      <a href="https://www.instagram.com/glamstudio__AK/">Instagram</a><br>
+      <a href="https://www.facebook.com/profile.php?id=100089813034389">Facebook</a>
+    </div>
+
+    <div>
+      <a href="https://booksy.com/pl-pl/181571" class="btn">Umów wizytę</a>
+    </div>
+  </div>
 </footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+const appearOptions = {
+  threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('show');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
 
 </body>
 </html>
