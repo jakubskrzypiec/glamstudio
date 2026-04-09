@@ -1,16 +1,16 @@
-*{box-sizing:border-box}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 
-body{
-  margin:0;
-  font-family:'Inter',sans-serif;
-
-  /* 🔥 PRAWDZIWY GRADIENT */
-  background: linear-gradient(180deg, #f6f1eb 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #6b4c4c 0%, #f6f1eb 50%, #ffffff 100%);
+min-height: 100vh;
 }
 
-h1,h2,h3{
-  font-family:'Playfair Display',serif;
+* {
+  box-sizing: border-box;
 }
+
+
 
 .container{
   width:90%;
@@ -20,7 +20,8 @@ h1,h2,h3{
 
 /* NAV */
 header{
-  background:white;
+  background: transparent;
+}
   border-bottom:1px solid #eee;
 }
 
@@ -131,4 +132,7 @@ footer{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:30px;
+}
+body {
+  border: 5px solid red;
 }
