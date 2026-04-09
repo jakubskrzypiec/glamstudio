@@ -2,8 +2,10 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
 
-  background: linear-gradient(180deg, #6b4c4c 0%, #f6f1eb 50%, #ffffff 100%);
-min-height: 100vh;
+  background: linear-gradient(to top, #5a3f3f 0%, #b9916c 35%, #f3e9e0 65%, #ffffff 100%);
+  background-attachment: fixed;
+
+  min-height: 100vh;
 }
 
 * {
