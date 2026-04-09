@@ -21,9 +21,9 @@ min-height: 100vh;
 /* NAV */
 header{
   background: transparent;
+  border-bottom: 1px solid #eee;
 }
-  border-bottom:1px solid #eee;
-}
+
 
 .nav{
   display:flex;
