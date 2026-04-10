@@ -248,3 +248,11 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.logo img {
+  height: 40px;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
