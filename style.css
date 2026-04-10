@@ -286,9 +286,17 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px; /* 🔥 kontrola odstępu */
+  padding: 8px 25px; /* 🔥 cieńszy pasek */
 }
 .logo img {
   height: 80px; /* 🔥 duże logo */
 }
 /* === FIXY === */
+.logo {
+  margin-left: 0;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
+}
