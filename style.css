@@ -416,7 +416,10 @@ nav a:hover {
   line-height: 1.7;
   margin-bottom: 15px;
 }
-
+.intro-text {
+  text-align: left;
+  max-width: 600px;
+}
 .intro-small {
   letter-spacing: 3px;
   font-size: 12px;
