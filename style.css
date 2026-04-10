@@ -196,3 +196,6 @@ transform: translateY(0);
   display: flex;
   justify-content: flex-start;
 }
+.intro {
+  padding-left: 120px;
+}
