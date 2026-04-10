@@ -1,232 +1,32 @@
 /* ===== RESET ===== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-
-body {
-font-family: 'Inter', sans-serif;
 }
 
-/* ===== CONTAINER ===== */
-.container {
-width: 90%;
-max-width: 1100px;
-margin: auto;
+body {
+  font-family: 'Inter', sans-serif;
 }
 
 /* ===== NAVBAR ===== */
 header {
-background: white;
-border-bottom: 1px solid #eee;
-position: sticky;
-top: 0;
-z-index: 1000;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 8px 0; /* bez bocznych odstępów */
-}
-
-.logo img {
-height: 55px;
-display: block;
-}
-
-nav a {
-text-decoration: none;
-color: #000;
-margin-left: 25px;
-font-size: 14px;
-letter-spacing: 1px;
-position: relative;
-transition: 0.3s;
-}
-
-/* hover kreska */
-nav a::after {
-content: "";
-position: absolute;
-left: 50%;
-bottom: -6px;
-width: 0;
-height: 2px;
-background: linear-gradient(90deg,#d4af37,#f1d27a);
-transform: translateX(-50%);
-transition: 0.3s;
-}
-
-nav a:hover::after {
-width: 100%;
-}
-
-nav a:hover {
-transform: translateY(-2px);
-}
-
-/* ===== HERO ===== */
-.hero {
-position: relative;
-height: 90vh;
-overflow: hidden;
-border-radius: 0 0 30px 30px;
-}
-
-/* VIDEO */
-.bg-video {
-position: absolute;
-top: 50%;
-left: 50%;
-width: 110%;
-height: 110%;
-object-fit: cover;
-transform: translate(-50%, -50%) scale(1.05);
-
-filter: blur(8px) brightness(0.4);
-z-index: -2;
-}
-
-/* OVERLAY */
-.overlay {
-position: absolute;
-inset: 0;
-background: rgba(0,0,0,0.6);
-z-index: -1;
-}
-
-/* HERO CONTENT */
-.hero-content {
-position: relative;
-z-index: 2;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
+  justify-content: flex-end;
+  padding: 10px 40px;
 }
 
 /* LOGO */
-.hero-logo {
-width: 1200px;
-max-width: 90%;
-filter: brightness(0) invert(1)
-drop-shadow(0 20px 60px rgba(0,0,0,0.9));
-transition: 0.4s;
-}
-
-.hero-logo:hover {
-transform: scale(1.05);
-}
-
-/* ===== INTRO ===== */
-.intro {
-background: #fff;
-padding: 140px 0;
-
-opacity: 0;
-transform: translateY(40px);
-animation: fadeUp 1s ease forwards;
-}
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: 500px auto;
-  gap: 40px;
-  align-items: center;
-}
-
-.intro-text {
-text-align: left;
-max-width: 600px;
-}
-
-.intro-small {
-letter-spacing: 3px;
-font-size: 12px;
-color: #999;
-}
-
-.intro-text h2 {
-font-family: 'Playfair Display', serif;
-font-size: 48px;
-margin: 10px 0 20px;
-}
-
-.intro-text p {
-color: #555;
-line-height: 1.7;
-margin-bottom: 15px;
-}
-.intro-text {
-  text-align: left;
-  max-width: 500px; /* było 600 → teraz bardziej premium */
-}
-/* BUTTON */
-.btn-main {
-display: inline-block;
-padding: 15px 30px;
-background: #e6d3c3;
-color: #000;
-text-decoration: none;
-border-radius: 5px;
-font-size: 14px;
-letter-spacing: 1px;
-transition: 0.3s;
-}
-
-.btn-main:hover {
-transform: scale(1.05);
-background: #d4bfae;
-}
-
-/* ANIMATION */
-@keyframes fadeUp {
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-.logo {
-  margin-right: auto;
-}
-.intro-btn {
-  display: flex;
-  justify-content: flex-start;
-}
-.intro {
-  padding-left: 120px;
-}
-.nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 8px 20px;
-}
-.logo {
-  margin-left: 5px;
-  .logo {
-  position: absolute;
-  left: 0;
-}
-.nav {
-  position: relative;
-}
-.logo {
-  left: 10px;
-}
-  /* === NAV FINAL FIX === */
-
-.nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* 🔥 menu idzie w prawo */
-  padding: 8px 40px;
-}
-
-/* LOGO NA SZTYWNO DO LEWEJ */
 .logo {
   position: absolute;
   left: 0;
@@ -243,4 +43,151 @@ transform: translateY(0);
 nav {
   display: flex;
   gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg,#d4af37,#f1d27a);
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.05);
+  filter: blur(8px) brightness(0.4);
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-logo {
+  width: 1200px;
+  max-width: 90%;
+  filter: brightness(0) invert(1)
+          drop-shadow(0 20px 60px rgba(0,0,0,0.9));
+  transition: 0.4s;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== INTRO ===== */
+.intro {
+  background: #fff;
+  padding: 140px 0 140px 120px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 500px auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+.intro-small {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #999;
+}
+
+.intro-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 10px 0 20px;
+}
+
+.intro-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.intro-btn {
+  display: flex;
+  align-items: center;
+}
+
+/* BUTTON */
+.btn-main {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #e6d3c3;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  transform: scale(1.05);
+  background: #d4bfae;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
