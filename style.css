@@ -199,3 +199,8 @@ transform: translateY(0);
 .intro {
   padding-left: 120px;
 }
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 20px;
+}
