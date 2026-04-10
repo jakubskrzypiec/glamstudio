@@ -249,8 +249,8 @@ nav a:hover::after {
   width: 100%;
 }
 .logo img {
-  height: 40px;
-  transition: 0.3s;
+  height: 60px; /* 🔥 większe */
+  display: block;
 }
 
 .logo img:hover {
@@ -291,4 +291,9 @@ nav a:hover {
 }
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
+}
+.container.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
