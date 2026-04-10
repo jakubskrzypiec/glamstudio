@@ -300,3 +300,97 @@ h1, h2, h3 {
   height: 70px;
   display: block;
 }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 25px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+}
+
+/* VIDEO */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.05);
+
+  filter: blur(8px) brightness(0.4);
+  z-index: -2;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* LOGO CENTER */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* LOGO */
+.hero-logo {
+  width: 500px;
+  max-width: 90%;
+
+  filter: brightness(0) invert(1)
+          drop-shadow(0 20px 60px rgba(0,0,0,0.9));
+
+  transition: 0.4s;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
