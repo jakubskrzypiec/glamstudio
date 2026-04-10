@@ -204,3 +204,6 @@ transform: translateY(0);
   margin: 0 auto;
   padding: 8px 20px;
 }
+.logo {
+  margin-left: -20px;
+}
