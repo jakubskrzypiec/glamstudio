@@ -205,8 +205,5 @@ transform: translateY(0);
   padding: 8px 20px;
 }
 .logo {
-  margin-left: -20px;
-}
-.nav {
-  padding: 8px 40px 8px 5; /* lewo = 0 */
-}
+  margin-left: 5px;
+
