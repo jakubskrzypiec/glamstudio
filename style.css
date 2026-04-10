@@ -216,3 +216,31 @@ transform: translateY(0);
 .logo {
   left: 10px;
 }
+  /* === NAV FINAL FIX === */
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 🔥 menu idzie w prawo */
+  padding: 8px 40px;
+}
+
+/* LOGO NA SZTYWNO DO LEWEJ */
+.logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  height: 55px;
+  display: block;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  gap: 25px;
+}
