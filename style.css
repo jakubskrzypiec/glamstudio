@@ -206,4 +206,13 @@ transform: translateY(0);
 }
 .logo {
   margin-left: 5px;
-
+  .logo {
+  position: absolute;
+  left: 0;
+}
+.nav {
+  position: relative;
+}
+.logo {
+  left: 10px;
+}
