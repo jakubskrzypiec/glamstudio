@@ -23,9 +23,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px 40px;
+  padding: 20px 40px; /* 🔥 było 10 → teraz 20 */
 }
-
 /* LOGO */
 .logo {
   position: absolute;
@@ -35,7 +34,7 @@ header {
 }
 
 .logo img {
-  height: 55px;
+  height: 90px;
   display: block;
 }
 
