@@ -192,3 +192,34 @@ nav a:hover {
     transform: translateY(0);
   }
 }
+/* ===== INTRO IMAGES ===== */
+.intro-images {
+  position: relative;
+  width: 350px;
+}
+
+/* GŁÓWNE ZDJĘCIE */
+.img-main {
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* DRUGIE ZDJĘCIE */
+.img-second {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 70%;
+  border-radius: 20px;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* HOVER */
+.intro-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  z-index: 2;
+}
