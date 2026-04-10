@@ -286,7 +286,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 25px; /* 🔥 cieńszy pasek */
+  padding: 4px 20px; /* 🔥 cieńszy pasek */
 }
 .logo img {
   height: 80px; /* 🔥 duże logo */
