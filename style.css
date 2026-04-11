@@ -413,3 +413,32 @@ nav a:hover {
 .cta-right::after {
   backdrop-filter: blur(2px);
 }
+/* ===== MID TEXT SECTION ===== */
+.mid-text {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f8f8f8; /* lekko inny niż biały → premium */
+}
+
+.mid-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mid-small {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #999;
+}
+
+.mid-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 15px 0 20px;
+}
+
+.mid-text p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+}
