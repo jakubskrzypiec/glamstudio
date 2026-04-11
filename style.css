@@ -281,3 +281,49 @@ nav a:hover {
 .cta-dark:hover {
   background: #000;
 }
+/* ===== SPLIT SECTION ===== */
+.split-section {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  min-height: 600px;
+}
+
+/* OBRAZ */
+.split-image {
+  background: url('lamilashes.jpg') center/cover no-repeat;
+
+  border-bottom-right-radius: 80px; /* 🔥 zaokrąglenie */
+}
+
+/* PRAWA STRONA */
+.split-content {
+  background: #f7f7f7;
+  padding: 120px 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SMALL TEXT */
+.split-small {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* TYTUŁ */
+.split-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+/* TEKST */
+.split-content p {
+  color: #666;
+  line-height: 1.8;
+  max-width: 400px;
+}
