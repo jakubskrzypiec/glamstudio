@@ -299,7 +299,8 @@ nav a:hover {
 /* PRAWA STRONA */
 .split-content {
   background: #f7f7f7;
-  padding: 120px 80px;
+  padding: 120px 80px 40px
+;
 
   display: flex;
   flex-direction: column;
@@ -327,4 +328,10 @@ nav a:hover {
   color: #666;
   line-height: 1.8;
   max-width: 400px;
+}
+.split-section {
+  margin-bottom: 0;
+}
+.cta-boxes {
+  margin-top: 0;
 }
