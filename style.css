@@ -292,7 +292,8 @@ nav a:hover {
 .split-image {
   background: url('lamilashes.jpg') center/cover no-repeat;
 
-  border-bottom-right-radius: 80px; /* 🔥 zaokrąglenie */
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
 }
 
 /* PRAWA STRONA */
