@@ -196,7 +196,11 @@ nav a:hover {
 .intro-images {
   position: relative;
   width: 350px;
+.intro-images {
+  justify-self: end;
+  margin-right: 60px; /* 🔥 tym sterujesz */
 }
+
 
 /* GŁÓWNE ZDJĘCIE */
 .img-main {
