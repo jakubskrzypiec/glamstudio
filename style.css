@@ -138,8 +138,16 @@ nav a:hover {
   grid-template-columns: 1fr 450px;
   gap: 80px;
   align-items: center;
-}
 
+  max-width: 1200px;
+  margin: 0 auto; /* 🔥 CENTRUJE CAŁĄ SEKCJĘ */
+}
+.intro-images {
+  position: relative;
+  width: 350px;
+
+  transform: translateX(-40px); /* 🔥 delikatne cofnięcie */
+}
 .intro-text {
   max-width: 500px;
 }
