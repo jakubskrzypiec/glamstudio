@@ -373,3 +373,43 @@ nav a:hover {
 .cta-button:hover {
   transform: scale(1.05);
 }
+.cta-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+
+  margin-top: 80px; /* 🔥 zwiększ/zmniejsz jak chcesz */
+}
+.cta-right {
+  position: relative;
+  background: url('dol.jpg') center/cover no-repeat;
+}
+
+.cta-right::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* 🔥 regulujesz moc */
+}
+.cta-button {
+  background: #fff;
+  color: #c99975;
+
+  padding: 18px 50px; /* 🔥 większy */
+  font-size: 13px;
+  letter-spacing: 2px;
+
+  border-radius: 6px;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+/* hover bardziej premium */
+.cta-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.cta-right::after {
+  backdrop-filter: blur(2px);
+}
