@@ -291,8 +291,6 @@ nav a:hover {
 /* OBRAZ */
 .split-image {
   background: url('lamilashes.jpg') center/cover no-repeat;
-
-  border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
 }
 
