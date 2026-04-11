@@ -450,3 +450,51 @@ nav a:hover {
 .cta-split {
   margin-top: 0; /* 🔥 usuwa przerwę */
 }
+/* ===== ODSTĘP NAD FOOTEREM ===== */
+.footer-space {
+  height: 100px;
+  background: #fff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* KOLUMNY */
+.footer-col h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.footer-col p {
+  margin-bottom: 10px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* DOLNA BELKA */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  color: #777;
+}
