@@ -333,4 +333,43 @@ nav a:hover {
 .cta-boxes {
   margin-top: 0;
 }
+/* ===== SPLIT CTA ===== */
+.cta-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 350px;
+}
 
+/* LEWA STRONA */
+.cta-left {
+  background: #2b2b2b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top-left-radius: 120px; /* 🔥 KLUCZ */
+}
+
+/* PRAWA STRONA */
+.cta-right {
+  background: url('dole.jpg') center/cover no-repeat;
+}
+
+/* PRZYCISK */
+.cta-button {
+  background: #fff;
+  color: #c99975;
+
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  transition: 0.3s;
+}
+
+/* HOVER */
+.cta-button:hover {
+  transform: scale(1.05);
+}
