@@ -232,3 +232,7 @@ nav a:hover {
   flex-direction: column;
   gap: 25px;
 }
+.intro-images {
+  justify-self: end;
+  margin-right: 60px; /* 🔥 tym sterujesz */
+}
