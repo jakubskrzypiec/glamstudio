@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glam Studio Aleksandra Knas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam Studio Aleksandra Knas</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
   <div class="nav">
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+    </div>
 
-<div class="logo">
-  <img src="logo.png" alt="logo">
-</div>
-
-<nav>
-  <a href="#">Start</a>
-  <a href="#">O nas</a>
-  <a href="#">Oferta</a>
-  <a href="#">Cennik</a>
-  <a href="#">Kontakt</a>
-</nav>
-
-
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="index.html#onas">O nas</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero">
-
   <video autoplay muted loop playsinline class="bg-video">
     <source src="glam.mp4" type="video/mp4">
   </video>
@@ -42,13 +37,11 @@
   <div class="hero-content">
     <img src="logo.png" alt="logo" class="hero-logo">
   </div>
-  </div>
-</section> <!-- 🔥 TO DODAJ -->
+</section>
 
-<section class="intro">
- <div class="intro-grid">
+<section class="intro" id="onas">
+  <div class="intro-grid">
 
-    <!-- LEWA STRONA -->
     <div class="intro-left">
       <div class="intro-text">
         <span class="intro-small">WITAJ</span>
@@ -66,74 +59,67 @@
       </div>
 
       <div class="intro-btn">
-        <a href="#" class="btn-main">ZOBACZ PEŁNĄ OFERTĘ</a>
+        <a href="oferta.html" class="btn-main">ZOBACZ PEŁNĄ OFERTĘ</a>
       </div>
     </div>
 
-    <!-- PRAWA STRONA -->
     <div class="intro-images">
-      <img src="lamibrows.jpg" class="img-main">
-      <img src="usta.jpg" class="img-second">
+      <img src="lamibrows.jpg" class="img-main" alt="Laminacja brwi">
+      <img src="usta.jpg" class="img-second" alt="Makijaż permanentny ust">
     </div>
 
   </div>
 </section>
-  <section class="split-section">
 
-  <!-- LEWA STRONA -->
+<section class="split-section">
   <div class="split-image"></div>
 
-  <!-- PRAWA STRONA -->
   <div class="split-content">
     <span class="split-small">PODARUJ SOBIE CHWILĘ</span>
 
     <h2>Rozpieść<br> siebie</h2>
 
     <p>
-      Profesjonalna i miła obsługa zadba, aby czas spędzony w salonie był czasem relaksu i przyjemności, pozwalając odprężyć się po trudach dnia codziennego.
+      Profesjonalna i miła obsługa zadba, aby czas spędzony w salonie był czasem relaksu i przyjemności,
+      pozwalając odprężyć się po trudach dnia codziennego.
     </p>
   </div>
-
 </section>
+
 <section class="cta-boxes">
-
-  <div class="cta cta-light">
+  <a href="kontakt.html" class="cta cta-light">
     <span>KONTAKT</span>
-  </div>
+  </a>
 
-  <div class="cta cta-dark">
+  <a href="oferta.html" class="cta cta-dark">
     <span>POZNAJ NASZ ZESPÓŁ</span>
-  </div>
-
+  </a>
 </section>
-  <section class="mid-text">
-  <div class="mid-content">
 
+<section class="mid-text">
+  <div class="mid-content">
     <span class="mid-small">ZAREZERWUJ WIZYTĘ</span>
     <h2>Umów wizytę już dziś</h2>
 
     <p>
-      Sprawdź dostępne terminy i zarezerwuj swoją chwilę relaksu
-      w Glam Studio.
+      Sprawdź dostępne terminy i zarezerwuj swoją chwilę relaksu w Glam Studio.
     </p>
-
   </div>
 </section>
-  <section class="cta-split">
 
+<section class="cta-split">
   <div class="cta-left">
-    <a href="#" class="cta-button">
+    <a href="cennik.html" class="cta-button">
       SPRAWDŹ CENY – UMÓW SIĘ ONLINE
     </a>
   </div>
 
   <div class="cta-right"></div>
-
 </section>
-  <section class="footer-space"></section>
+
+<section class="footer-space"></section>
 
 <footer class="footer">
-
   <div class="footer-container">
 
     <div class="footer-col">
@@ -160,7 +146,7 @@
   <div class="footer-bottom">
     © 2026 Glam Studio – Wszystkie prawa zastrzeżone
   </div>
-
 </footer>
-  </body>
+
+</body>
 </html>
